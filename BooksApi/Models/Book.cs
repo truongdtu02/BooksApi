@@ -7,7 +7,7 @@ namespace BooksApi.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get;}
+        public string Id { get; set; }
 
         [BsonElement("Name")]
         public string BookName { get; set; }
